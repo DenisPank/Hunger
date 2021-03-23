@@ -17,7 +17,6 @@ body {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6,
@@ -29,6 +28,17 @@ li {
   text-transform: uppercase;
   text-align: center;
   color: black;
+}
+
+h3 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.167em;
+  letter-spacing: 0.5em;
+  text-align: center;
+  margin: 0;
 }
 
 p {
@@ -283,23 +293,26 @@ h2::after {
 }
 
 /* header  */
-/************************************ about-us  ****************************/
+/************************************ about-us nad team  ****************************/
 
 .about-us {
   padding: 100px 0;
 }
 
-.about-us__content {
+.about-us__content,
+.team__content {
   width: 600px;
 }
 
-.about-us .container {
+.about-us .container,
+.team__offer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-.about-us__img {
+.about-us__img,
+.team__img {
   background: url("../img/coals.jpg") no-repeat;
   position: relative;
   height: 475px;
@@ -308,10 +321,47 @@ h2::after {
   box-shadow: 0 0 60px rgb(0 0 0 / 50%);
 }
 
-.about-us__img img {
+.about-us__img img,
+.team__img img {
   position: absolute;
   top: 115px;
   right: -125px;
 }
 
-/* about-us  */
+.about-us__title::after {
+  margin: 15px auto;
+}
+
+/* about-us and team  */
+/****************************** team  ***********************************/
+
+.team {
+  background: url("../img/vegetables.jpg") center / cover no-repeat;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 42px 0 100px;
+}
+
+.team__title {
+  color: white;
+}
+
+.team__title::after {
+  margin: 15px auto;
+}
+
+.team__img img {
+  left: -125px;
+}
+
+.team__img {
+  background: url("../img/chef.jpg") no-repeat;
+}
+
+.team__subtitle {
+  color: white;
+}
+
+.team__offer {
+  margin-top: 45px;
+}
+/* team  */
