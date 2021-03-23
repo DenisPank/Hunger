@@ -237,7 +237,7 @@ h2::after {
   width: 290px;
 }
 
-.header__line {
+.line {
   background: rgba(255, 255, 255, 0.2);
   position: absolute;
   display: block;
@@ -245,43 +245,43 @@ h2::after {
   height: 1px;
 }
 
-.header__line-first-g,
-.header__line-second-g {
+.line-first-g,
+.line-second-g {
   width: 530px;
   top: 100px;
 }
 
-.header__line-second-g {
+.line-second-g {
   right: 0;
 }
 
-.header__line-first-g {
+.line-first-g {
   left: 0;
 }
 
-.header__line.header__line-first-h,
-.header__line.header__line-second-h {
+.line.line-first-h,
+.line.line-second-h {
   height: calc(100% - 101px);
   top: 101px;
   width: 1px;
 }
 
-.header__line-second-h {
+.line-second-h {
   right: 190px;
 }
 
-.header__line-first-h {
+.line-first-h {
   left: 190px;
 }
 
-.header__line.header__line-third-h {
+.line.line-third-h {
   height: calc(100% - 200px);
   width: 1px;
   top: 200px;
   left: 50%;
 }
 
-.header__line.header__line-circle {
+.line.line-circle {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -293,7 +293,7 @@ h2::after {
 }
 
 /* header  */
-/************************************ about-us nad team  ****************************/
+/************************************ about-us and team and table  ****************************/
 
 .about-us {
   padding: 100px 0;
@@ -305,34 +305,39 @@ h2::after {
 }
 
 .about-us .container,
-.team__offer {
+.team__offer,
+.table__offer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 
 .about-us__img,
-.team__img {
+.team__img,
+.table__img {
   background: url("../img/coals.jpg") no-repeat;
   position: relative;
   height: 475px;
   width: 475px;
   border-radius: 5px;
   box-shadow: 0 0 60px rgb(0 0 0 / 50%);
+  z-index: 2;
 }
 
 .about-us__img img,
-.team__img img {
+.team__img img,
+.table__img img {
   position: absolute;
   top: 115px;
   right: -125px;
+  box-shadow: 0 0 60px rgb(0 0 0 / 50%), inset 0 0 60px rgb(0 0 0 / 50%);
 }
 
 .about-us__title::after {
   margin: 15px auto;
 }
 
-/* about-us and team  */
+/* about-us and team  and table */
 /****************************** team  ***********************************/
 
 .team {
@@ -364,4 +369,66 @@ h2::after {
 .team__offer {
   margin-top: 45px;
 }
+
+.line.team__line {
+  height: calc(100% + 142px);
+  top: -42px;
+  z-index: 1;
+}
 /* team  */
+/****************************************** table  ****************************/
+.table {
+  padding: 100px 0 40px 0;
+}
+
+.table__offer {
+  justify-content: start;
+}
+
+.table__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.table__form input {
+  background: rgba(229, 229, 229, 1);
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.input-text {
+  text-align: start;
+  outline: none;
+}
+
+.table__btn {
+  grid-column: 1/3;
+  background: rgba(232, 195, 0, 1);
+}
+.table__btn:hover {
+  background: rgba(232, 195, 0, 0.7);
+}
+.table__registration {
+  width: 570px;
+}
+
+.table__img {
+  background: url("../img/time.jpg");
+  margin-left: 72px;
+}
+
+.table__subtitle {
+  color: rgba(51, 51, 51, 0.5);
+  letter-spacing: 0;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-top: 45px;
+}
+
+.table__subtitle span {
+  font-weight: 700;
+}
+/* table  */
