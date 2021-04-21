@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Italiana&family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
@@ -137,7 +141,7 @@
                 type="text"
                 placeholder="Name"
                 name="name"
-                id="user"
+                id="user-name"
                 required
                 class="text-style input-text"
               />
@@ -160,7 +164,7 @@
                 type="text"
                 placeholder="People"
                 name="name"
-                id="user"
+                id="user-people"
                 required
                 class="text-style input-text"
               />
@@ -168,7 +172,7 @@
                 type="text"
                 placeholder="Date (mm/dd)"
                 name="text"
-                id="text"
+                id="text-data"
                 required
                 class="text-style input-text"
               />
@@ -176,7 +180,7 @@
                 type="text"
                 placeholder="Time"
                 name="text"
-                id="text"
+                id="text-time"
                 required
                 class="text-style input-text"
               />
@@ -193,5 +197,309 @@
         </p>
       </div>
     </section>
+    <section class="specialties">
+      <h3 class="specialties__subtitle">specialties</h3>
+      <!-- Slider main container -->
+      <div class="specialties-container swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="specialties-wrapper swiper-wrapper">
+          <!-- Slides -->
+          <div class="specialties-slide swiper-slide">
+            <div class="specialties__offer">
+              <div class="specialties__img">
+                <img src="img/cube.png" alt="cube" />
+              </div>
+              <div class="specialties__content">
+                <h2 class="specialties__title">chocolate pancakes</h2>
+                <p class="specialties__text text-style">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis at velit maximus, molestie est a, tempor magna.
+                  </span>
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed
+                  ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                  lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                  pharetra. Nulla facilisis semper laoreet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="specialties-slide swiper-slide">
+            <div class="specialties__offer">
+              <div class="specialties__img">
+                <img src="img/cube.png" alt="cube" />
+              </div>
+              <div class="specialties__content">
+                <h2 class="specialties__title">chocolate pancakes</h2>
+                <p class="specialties__text text-style">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis at velit maximus, molestie est a, tempor magna.
+                  </span>
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed
+                  ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                  lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                  pharetra. Nulla facilisis semper laoreet.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="specialties-slide swiper-slide">
+            <div class="specialties__offer">
+              <div class="specialties__img">
+                <img src="img/cube.png" alt="cube" />
+              </div>
+              <div class="specialties__content">
+                <h2 class="specialties__title">chocolate pancakes</h2>
+                <p class="specialties__text text-style">
+                  <span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Duis at velit maximus, molestie est a, tempor magna.
+                  </span>
+                  Integer ullamcorper neque eu purus euismod, ac faucibus mauris
+                  posuere. Morbi non ultrices ligula. Sed dictum, enim sed
+                  ullamcorper feugiat, dui odio vehicula eros, a sollicitudin
+                  lorem quam nec sem. Mauris tincidunt feugiat diam convallis
+                  pharetra. Nulla facilisis semper laoreet.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="specialties-pagination swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="menu">
+      <div class="container">
+        <h2 class="menu__title">DELICIOUS MENU</h2>
+        <p class="menu__subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
+          maximus, molestie est a, tempor magna.
+        </p>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <p class="menu__type">SOUPE</p>
+          </li>
+          <li class="menu__item">
+            <p class="menu__type">PIZZA</p>
+          </li>
+          <li class="menu__item">
+            <p class="menu__type">PASTA</p>
+          </li>
+          <li class="menu__item">
+            <p class="menu__type">DESERT</p>
+          </li>
+          <li class="menu__item">
+            <p class="menu__type">WINE</p>
+          </li>
+          <li class="menu__item">
+            <p class="menu__type">BEER</p>
+          </li>
+          <li class="menu__item">
+            <p class="menu__type">DRINKS</p>
+          </li>
+        </ul>
+        <ul class="menu__list-dishes">
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+          <li class="menu__item-dishes">
+            <h4 class="menu__name-dishes">
+              PIZZA QUATRO STAGIONI . . . .
+              <span class="menu__dishes-description">
+                Integer ullamcorper neque eu purus euismod
+              </span>
+            </h4>
+            <p class="menu__price">55,68 USD</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="events">
+      <h3 class="events__subtitle">PRIVATE EVENTS</h3>
+    </section>
+    <!-- script  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

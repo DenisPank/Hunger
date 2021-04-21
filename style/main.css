@@ -11,6 +11,12 @@ body {
   height: 100%;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -60,6 +66,7 @@ h1 {
 h2 {
   font-size: 36px;
   line-height: 1.333em;
+  letter-spacing: 0.04em;
 }
 
 .text-style {
@@ -146,6 +153,11 @@ h2 {
 
 .header__nav-img {
   margin-top: 25px;
+  transition: all 0.8s ease;
+}
+
+.header__nav-img:hover {
+  transform: rotate(720deg);
 }
 
 .header__btn {
@@ -314,7 +326,8 @@ h2::after {
 
 .about-us__img,
 .team__img,
-.table__img {
+.table__img,
+.specialties__img {
   background: url("../img/coals.jpg") no-repeat;
   position: relative;
   height: 475px;
@@ -326,7 +339,8 @@ h2::after {
 
 .about-us__img img,
 .team__img img,
-.table__img img {
+.table__img img,
+.specialties__img img {
   position: absolute;
   top: 115px;
   right: -125px;
@@ -432,3 +446,165 @@ h2::after {
   font-weight: 700;
 }
 /* table  */
+/********************************* specialties **************************/
+.specialties {
+  background: url("../img/private-bg.jpg") center / cover no-repeat;
+  padding: 45px 0;
+}
+
+.specialties__subtitle {
+  text-transform: uppercase;
+}
+
+.specialties__img {
+  background: url("../img/eat.png") no-repeat;
+  background-position: center;
+}
+
+.specialties__img img {
+  left: -125px;
+  right: 0;
+}
+
+.specialties-slide {
+  padding: 0 311px;
+}
+
+.specialties-container {
+  margin-top: 45px;
+  min-height: 530px;
+}
+
+.specialties__offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.specialties__content {
+  color: white;
+  width: 600px;
+}
+
+.specialties__title {
+  color: white;
+}
+
+.specialties__title::after {
+  margin: 15px auto;
+}
+
+.specialties__text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.specialties-pagination .swiper-pagination-bullet {
+  background: white;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px !important;
+}
+
+.specialties-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+/* specialties */
+/* menu  */
+
+.menu {
+  padding: 100px 0 65px;
+}
+
+.menu__subtitle {
+  display: block;
+  font-size: 18px;
+  line-height: 1.556em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: black;
+  width: 565px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.menu__list {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+  margin-top: 50px;
+}
+
+.menu__type {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 18px 43px;
+  color: rgba(51, 51, 51, 1);
+}
+
+.menu__item {
+  border-right: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.menu__item:last-child {
+  border: none;
+}
+
+.menu__title::after {
+  margin: 15px auto;
+}
+
+.menu__name-dishes,
+.menu__price {
+  font-size: 18px;
+  color: rgba(51, 51, 51, 1);
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: start;
+}
+
+.menu__price {
+  margin-left: 15px;
+}
+
+.menu__name-dishes {
+  letter-spacing: 0.05em;
+}
+
+.menu__dishes-description {
+  font-family: "Open Sans", sans-serif;
+  text-transform: lowercase;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  display: block;
+  letter-spacing: normal;
+}
+
+.menu__list-dishes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 87px;
+  margin-top: 50px;
+}
+
+.menu__item-dishes {
+  margin-bottom: 35px;
+  display: flex;
+}
+/* menu  */
+/* events */
+.events {
+  background: url("../img/private-bg.jpg") center / cover no-repeat;
+  padding: 0 45px;
+}
+
+.events__subtitle {
+  text-transform: uppercase;
+}
+/* events */
