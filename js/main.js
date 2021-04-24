@@ -5,3 +5,13 @@ new Swiper(".specialties-container", {
     el: ".specialties-pagination",
   },
 });
+
+new Swiper(".gallery-container", {
+  loop: true,
+  slidesPerView: 6,
+  breakpoints: {
+    1420: {
+      slidesPerView: 4,
+    },
+  },
+});

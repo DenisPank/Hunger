@@ -151,6 +151,7 @@
                 name="email"
                 id="email"
                 required
+                class="text-style input-text"
               />
               <input
                 type="tel"
@@ -275,7 +276,7 @@
     <section class="menu">
       <div class="container">
         <h2 class="menu__title">DELICIOUS MENU</h2>
-        <p class="menu__subtitle">
+        <p class="menu__subtitle short-title">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
           maximus, molestie est a, tempor magna.
         </p>
@@ -496,8 +497,151 @@
       </div>
     </section>
     <section class="events">
-      <h3 class="events__subtitle">PRIVATE EVENTS</h3>
+      <div class="container">
+        <h3 class="events__subtitle">PRIVATE EVENTS</h3>
+        <div class="events__posters-wrapper">
+          <div class="events__posters events__posters-first">
+            <img src="img/ring.png" alt="ring" class="events__img" />
+            <div class="events__name-wrapper events__name-wrapper-first">
+              <p class="evenst__name evenst__name-first">weddings</p>
+            </div>
+            <img
+              src="img/cube.png"
+              alt="Cube"
+              class="events__cube events__cube-first"
+            />
+          </div>
+          <div class="events__posters events__posters-second">
+            <img src="img/marry.png" alt="ring" class="events__img" />
+            <div class="events__name-wrapper events__name-wrapper-second">
+              <p class="evenst__name evenst__name-second">corporate pzrties</p>
+            </div>
+            <img
+              src="img/cube.png"
+              alt="Cube"
+              class="events__cube events__cube-second"
+            />
+          </div>
+        </div>
+        <div class="events__info">
+          <p class="events__info-inner">
+            For private events please call:
+            <span>+40 729 131 637/+40 726 458 782</span> or use the contact
+            form.
+          </p>
+        </div>
+      </div>
     </section>
+    <section class="gallery">
+      <!-- Slider main container -->
+      <div class="gallery-container swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="gallery-slider swiper-slide">
+            <img
+              src="img/gallery-1.jpg"
+              alt="photo restaurant"
+              class="gallery__img"
+            />
+          </div>
+          <div class="gallery-slider swiper-slide">
+            <img
+              src="img/gallery-2.jpg"
+              alt="photo restaurant"
+              class="gallery__img"
+            />
+          </div>
+          <div class="gallery-slider swiper-slide">
+            <img
+              src="img/gallery-3.jpg"
+              alt="photo restaurant"
+              class="gallery__img"
+            />
+          </div>
+          <div class="gallery-slider swiper-slide">
+            <img
+              src="img/gallery-4.jpg"
+              alt="photo restaurant"
+              class="gallery__img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <h2 class="contact__title">CONTACT</h2>
+        <p class="contact__subtitle short-title">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit
+          maximus, molestie est a, tempor magna.
+        </p>
+        <form action="#" method="GET" class="contact__form">
+          <div class="row contact__info-form">
+            <input
+              type="text"
+              placeholder="Name"
+              name="name"
+              id="user-name"
+              required
+              class="text-style input-text"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              id="email"
+              class="text-style input-text"
+              required
+            />
+            <input
+              type="tel"
+              placeholder="Phone"
+              name="phone"
+              id="phone"
+              required
+              class="text-style input-text"
+            />
+          </div>
+          <div class="row contact__comment-form">
+            <textarea
+              name="comment"
+              id=""
+              cols="50"
+              rows="4"
+              placeholder="Message"
+              required
+              class="text-style input-text"
+            ></textarea>
+          </div>
+          <div class="row contact__btn-form">
+            <p class="row contact__connection contact__address other__text">
+              <img class="contact__icon" src="img/placeholder.svg" alt="icon" />
+              5th London Boulevard, U.K.
+            </p>
+            <p class="row contact__connection contact__phone other__text">
+              <img class="contact__icon" src="img/phone-call.svg" alt="icon" />
+              +40 729 131 637/+40 726 458 782
+            </p>
+            <p class="row contact__connection contact__mail other__text">
+              <img class="contact__icon" src="img/envelope.svg" alt="icon" />
+              office@mindblister.com
+            </p>
+            <button class="contact__btn btn" type="submit">SEND MESSAGE</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="map">
+      <a href="#" class="map__link"></a>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <p class="footer__text other__text">
+          © Copyright <span>Mindblister</span> 2019
+        </p>
+      </div>
+    </footer>
     <!-- script  -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

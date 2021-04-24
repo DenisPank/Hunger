@@ -113,9 +113,25 @@ h2 {
   letter-spacing: 0.5em;
 }
 
+.short-title {
+  display: block;
+  font-size: 18px;
+  line-height: 1.556em;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: black;
+  width: 565px;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .other__text {
   letter-spacing: normal;
   line-height: normal;
+}
+
+.row {
+  display: flex;
 }
 
 /***************************** header  ***************************************8*/
@@ -516,18 +532,6 @@ h2::after {
   padding: 100px 0 65px;
 }
 
-.menu__subtitle {
-  display: block;
-  font-size: 18px;
-  line-height: 1.556em;
-  font-weight: 700;
-  margin-bottom: 30px;
-  color: black;
-  width: 565px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .menu__list {
   display: flex;
   margin: 0 auto;
@@ -601,10 +605,205 @@ h2::after {
 /* events */
 .events {
   background: url("../img/private-bg.jpg") center / cover no-repeat;
-  padding: 0 45px;
+  padding: 45px 0;
 }
 
 .events__subtitle {
   text-transform: uppercase;
+  margin-bottom: 45px;
 }
+
+.events__posters {
+  width: 475px;
+  height: 475px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.evenst__name {
+  text-transform: uppercase;
+  position: absolute;
+  transform: rotate(90deg) translateY(-100%);
+  left: -50%;
+  color: white;
+  font-size: 24px;
+  top: 60px;
+  font-family: "Italiana", serif;
+}
+
+.events__name-wrapper {
+  position: absolute;
+  width: 80px;
+  height: 100%;
+  background: black;
+  text-align: center;
+  top: 0;
+  right: 0;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.events__posters:hover {
+  box-shadow: 0 0 60px rgb(255 255 255 / 50%);
+  opacity: 0.8;
+}
+
+.events__posters:hover .events__cube {
+  box-shadow: 0 0 60px rgb(255 255 255 / 50%),
+    inset 0 0 60px rgb(255 255 255 / 50%);
+}
+
+.events__cube {
+  top: 115px;
+  position: absolute;
+  left: -125px;
+  transition: all 0.5s ease;
+}
+
+.events__posters-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.events__info-inner {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.events__info-inner span {
+  font-weight: 700;
+}
+
+.events__info {
+  margin-top: 45px;
+}
+
+.events__cube-second {
+  left: auto;
+  right: -125px;
+}
+
+.evenst__name-second {
+  transform: rotate(-90deg) translateY(-100%);
+  top: auto;
+  bottom: 120px;
+  width: max-content;
+  left: -50%;
+}
+
+.events__name-wrapper-second {
+  left: 0;
+}
+
+.events__name-wrapper-second {
+  border-radius: 5px 0px 0px 5px;
+}
+
 /* events */
+/* gallery  */
+.gallery__wrapper {
+  display: flex;
+}
+/* gallery  */
+/* contact  */
+.contact {
+  padding: 100px 0;
+}
+
+.contact__form {
+  margin-top: 50px;
+}
+
+.contact__title::after {
+  margin: 15px auto;
+}
+
+.contact__info-form {
+  justify-content: space-between;
+}
+
+.contact__info-form input {
+  background: rgba(229, 229, 229, 1);
+  border-radius: 5px;
+  border: none;
+  width: 33%;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact__comment-form textarea {
+  background: rgba(229, 229, 229, 1);
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.contact__comment-form {
+  margin: 10px 0;
+}
+
+.contact__connection {
+  width: fit-content;
+  text-transform: lowercase;
+  color: rgba(153, 153, 153, 1);
+  font-size: 12px;
+}
+
+.contact__btn-form {
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.contact__icon {
+  width: 15px;
+  color: #e8c300;
+  margin-right: 10px;
+}
+
+.contact__btn {
+  background: rgba(232, 195, 0, 1);
+  color: white;
+  text-transform: uppercase;
+  padding: 19px 20px;
+  margin-left: 20px;
+  width: 640px;
+  font-family: "Open Sans", sans-serif;
+}
+/* contact  */
+/* map  */
+.map {
+  background: url("../img/map.jpg") no-repeat;
+  width: 100%;
+  height: 475px;
+  background-size: cover;
+}
+
+.map__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.map__img {
+  width: 100%;
+}
+/* map  */
+
+.footer {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 41px 0;
+}
+
+.footer__text {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.footer__text span {
+  font-weight: 700;
+}
